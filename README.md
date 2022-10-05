@@ -5,6 +5,9 @@
 ## Project Initialization
 
 $ git clone https://github.com/jhhg04/React-CIandT-Challenge.git
+
 $ cd React-CIandT-Challenge
+
 npm i
+
 npm start
