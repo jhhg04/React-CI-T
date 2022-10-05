@@ -1,81 +1,79 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-  overflow-x: hidden;
-}
-
-.header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.content {
-  max-width: 40rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
+.App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
 }
 
-.header-video video {
-  min-width: 100%;
-  min-height: 100%;
+.Instructions {
+  margin-top: 20px;
+  font-size: calc(15px + 1vmin);
 }
 
-.header-overlay {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #8095d1;
-  z-index: 1;
-  opacity: .60;
+.Form {
+  margin-top: 20px;
+  display: flex;
+  height: 60px;
 }
 
-.header-content {
-  z-index: 2;
+.Input {
+  height: calc(40px + 2vmin);
+  width: calc(200px + 10vmin);
+  font-size: 1.2em;
+  padding: 0 24px;
+  border-radius: 5px 0 0 5px;
+  color: #3a3a3a;
+  border: 2px solid #fff;
+  border-right: 0;
 }
 
-.header-content h1 {
-  font-size: 50px;
-  margin-bottom: 0;
-  font-family: 'Lobster', cursive;
-}
-
-.header-content p {
-  font-size: 1.5rem;
-  display: block;
-  padding-bottom: 2rem;
-}
-
-.btn {
-  background: #c44569;
+.SearchButton {
+  display: inline-block;
+  height: calc(40px + 2vmin);
+  width: calc(40px + 10vmin);
+  background: #e3350c;
+  border-radius: 0 5px 5px 0;
+  border: 0;
   color: #fff;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (max-width: 960px) {
-  .content {
-    padding: 0 3rem 0 3rem;
+.ButtonIcon {
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+#spinning-pokeball {
+  animation: spin 0.5s linear infinite;
 }
