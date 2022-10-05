@@ -4,10 +4,10 @@
 
 ## Project Initialization
 
-$ git clone https://github.com/jhhg04/React-CIandT-Challenge.git
+1. $ git clone https://github.com/jhhg04/React-CIandT-Challenge.git
 
-$ cd React-CIandT-Challenge
+2. $ cd React-CIandT-Challenge
 
-npm i
+3. npm i
 
-npm start
+4. npm start
